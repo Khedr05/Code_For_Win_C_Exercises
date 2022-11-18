@@ -16,8 +16,5 @@ int main(void) {
 	printf("Enter The Integer You Want To Check \n");
 	fflush(stdout);
 	scanf("%d",&x);
-	if(x % 2 == 0)
-		printf("%d Is Even",x);
-	else
-		printf("%d Is Odd",x);
+	(x % 2 == 0) ? printf("%d Is Even",x) : printf("%d Is Odd",x);
 }

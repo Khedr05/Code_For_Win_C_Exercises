@@ -16,10 +16,8 @@ int main(void) {
 	printf("Enter Three Numbers \n");
 	fflush(stdout);
 	scanf("%f %f %f",&x,&y,&z);
-	if(x>y && x>z)
-		printf("Largest Number Is : %f",x);
-	else if(y>x && y>z)
-		printf("Largest Number Is : %f",y);
-	else if(z>x && z>y)
-		printf("Largest Number Is : %f",z);
+
+	((x>y)&&(x>z)) ? printf("Largest Number Is : %f",x):
+	((y>x)&&(y>z)) ? printf("Largest Number Is : %f",y):
+	((z>x)&&(z>y)) ? printf("Largest Number Is : %f",z):printf("");
 }

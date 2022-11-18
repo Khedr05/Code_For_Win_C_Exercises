@@ -16,8 +16,5 @@ int main(void) {
 	printf("Enter Two Numbers \n");
 	fflush(stdout);
 	scanf("%f %f",&x,&y);
-	if(x>y)
-		printf("Largest Number Is : %f",x);
-	else
-		printf("Largest Number Is : %f",y);
+	(x>y) ? printf("Largest Number Is : %f",x):printf("Largest Number Is : %f",y);
 }
